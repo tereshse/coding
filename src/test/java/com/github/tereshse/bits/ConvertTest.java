@@ -1,10 +1,12 @@
 package com.github.tereshse.bits;
 
+import org.junit.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ConvertTest {
 
-    @org.junit.Test
+    @Test
     public void toBitString() throws Exception {
         assertThat(Convert.toBitString(0)).isEqualTo("0");
         assertThat(Convert.toBitString(1)).isEqualTo("1");
