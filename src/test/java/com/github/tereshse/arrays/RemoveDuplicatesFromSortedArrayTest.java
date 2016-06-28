@@ -55,6 +55,7 @@ public class RemoveDuplicatesFromSortedArrayTest {
         assertThat(RemoveDuplicatesFromSortedArray.isSorted(null)).isTrue();
         assertThat(RemoveDuplicatesFromSortedArray.isSorted(new int[]{1})).isTrue();
         assertThat(RemoveDuplicatesFromSortedArray.isSorted(new int[]{1, 2})).isTrue();
+        assertThat(RemoveDuplicatesFromSortedArray.isSorted(new int[]{0, 0, 0, 1, 1, 2})).isTrue();
         assertThat(RemoveDuplicatesFromSortedArray.isSorted(new int[]{3, 1})).isFalse();
     }
 }

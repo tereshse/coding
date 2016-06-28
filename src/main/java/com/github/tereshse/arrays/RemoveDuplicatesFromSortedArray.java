@@ -22,7 +22,7 @@ public class RemoveDuplicatesFromSortedArray {
 
     public static int removeDuplicatesFromSortedArray(int[] array) {
         Preconditions.checkArgument(array != null);
-        Preconditions.checkArgument(isSorted(array));
+        Preconditions.checkArgument(isSorted(array), "Array should be sorted.");
         int writeIndex = 1;
         for (int i = 1; i < array.length; i++) {
             if (array[writeIndex - 1] != array[i]) {
